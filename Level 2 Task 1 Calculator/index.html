@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Basic Calculator</title>
+</head>
+<body>
+    <div class="calculator">
+        <h4>CALCULATOR</h4>
+        <div class="input">
+            <input type="text" name="formula" id="formula" onfocus="this.value = this.value;" disabled>
+            <input type="text" name="answer" id="ans" value="0" disabled>
+        </div>
+        <div class="buttons">
+            <table>
+                <tr>
+                    <th><button class="black" onclick="remOne()">C</button></th>
+                    <th><button id="deleteAll" class="black" onclick="remAll()">CE</button></th>
+                    <th><button class="black" onclick="putOperator('%')">%</button></th>
+                    <th><button class="pink" onclick="putOperator('/')">/</button></th>
+                </tr>  
+                <tr>
+                    <th><button onclick="putNumber(7)">7</button></th>
+                    <th><button onclick="putNumber(8)">8</button></th>
+                    <th><button onclick="putNumber(9)">9</button></th>
+                    <th><button class="pink" onclick="putOperator('*')">x</button></th>
+                </tr>
+                <tr>
+                    <th><button onclick="putNumber(4)">4</button></th>
+                    <th><button onclick="putNumber(5)">5</button></th>
+                    <th><button onclick="putNumber(6)">6</button></th>
+                    <th><button class="pink" onclick="putOperator('-')">-</button></th>
+                </tr>
+                <tr>
+                    <th><button onclick="putNumber(1)">1</button></th>
+                    <th><button onclick="putNumber(2)">2</button></th>
+                    <th><button onclick="putNumber(3)">3</button></th>
+                    <th><button class="pink" onclick="putOperator('+')">+</button></th>
+                </tr>
+                <tr>
+                    <th><button onclick="putNumber(0)">0</button></th>
+                    <th><button onclick="putNumber('.')">.</button></th>
+                    <th colspan="2"><button id="eq" onclick="equals()">=</button></th>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+    
+</body>
+</html>
