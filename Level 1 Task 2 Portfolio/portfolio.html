@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+    <meta charset="UTF-8">
+    <title>Demo Portfolio</title>
+    <link rel="stylesheet" href="portfolio.css">
+</head>
+
+<body>
+    <nav>
+        <ul id='navbar'>
+            <li><H1>Portfolio</H1></li>
+            <li><a href="#welcome-section">About</a></li>
+            <li><a href="#projects">Work</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div id="welcome-section" class="intro">
+        <img src="profile.jpg" width="250px" height="300px"> 
+        <h1>Hey, I'm Shaikh Sohel</h1><br>
+        <p>Having spent a large chunk of my life in art school, I've finally found my passion at the crossroads of design and technology. I started off as an undergrad in industrial design, then worked some graphic design gigs, and later went back to school for web design and new media. The one lesson that stood out throughout this journey was the importance of the end user. Whether a physical or digital product, its purpose needs to be obvious, and the product itself has to be easy to use. So no matter what I'm working on, I always have the user in mind and try my hardest to create an enjoyable experience for them.</p>
+          <p> When I'm not busy, you can find me obsessing over food, cats, skincare, and video games, or working on one of my many hobbies like playing the ukulele or crocheting. I tend to switch things up every few months, so if you want to know what I'm up to, just <a class="scroll" href="#follow-me">follow me!</a> :)</p>
+    </div>
+    
+    <div id="projects" class="work">
+        <h2 class="work-header">These are some of my projects..</h2>
+        
+        
+        <a href="" class="project project-tile">
+            <img class="project-pic" src="img/projectbg1.png" alt="project">
+            <div class="project-title">Demo Project 1</div>
+        </a>
+        <a href="" class="project project-tile">
+            <img class="project-pic" src="img/projectbg2.png" alt="project">
+            <div class="project-title">Demo Project 2</div>
+        </a>
+        <a href="" class="project project-tile">
+            <img class="project-pic" src="img/projectbg3.png" alt="project">
+            <div class="project-title">Demo Project 3</div>
+        </a>
+        <a href="" target="_blank" class="project project-tile">
+            <img class="project-pic" src="img/projectbg4.png" alt="project">
+            <div class="project-title">Demo Project 4</div>
+        </a>
+        <a href="" target="_blank" class="project project-tile">
+            <img class="project-pic" src="img/projectbg5.png" alt="project">
+            <div class="project-title">Demo Project 5</div>
+        </a>
+        <a href="" class="project project-tile">
+            <img class="project-pic" src="img/projectbg6.png" alt="project">
+            <div class="project-title">Demo Project 6</div>
+        </a>
+        <a href="" class="show-all" target="_blank">Show all</a>
+    </div>
+    
+    <div id="contact" class="contact">
+        <div class="header">
+            <h1>Let's work together...</h1>
+            <p>How do you take your coffee?</p>
+        </div>
+        <a href="" target="_blank" class="contact-details">Facebook</a>
+        <a id='profile-link' href="" target="_blank" class="contact-details">GitHub</a>
+        <a href="" target="_blank" class="contact-details">Instagram</a>
+        <a href="mailto:" class="contact-details">Send a mail</a>
+        <a href="tel:" class="contact-details">Call me</a>
+    </div>
+    <form action="#" method="post">
+        <h1>Contact Us</h1>
+        <p>Please take a moment to get in touch, we will get back to you shortly.</p>
+      
+        <div class="column">
+          <label for="the-name">Your Name</label>
+          <input type="text" name="name" id="the-name">
+      
+          <label for="the-email">Email Address</label>
+          <input type="email" name="email" id="the-email">
+      
+          <label for="the-phone">Phone Number</label>
+          <input type="tel" name="phone" id="the-phone">
+      
+          <label for="the-reason">How can we help you?</label>
+          <select name="reason" id="the-reason">
+          <option value="">Choose one</option>
+          <option value="web">I need web design services</option>
+          <option value="video">I need you to produce a video</option>
+          <option value="3d">I need 3D polygon things</option>
+        </select>
+          <label for="the-message">Message</label>
+          <textarea name="message" id="the-message"></textarea>
+          <label>
+          <input type="checkbox" name="newsletter" value="yes"> Join our mailing list?
+          </label>
+          <input type="submit" value="Send Message">
+        </div>
+      </form>
+<footer>This Is Just a Demo Portfolio.. 
+  <p>&copy; Created by<a href="#" target="_blank">SohelDev</a></p>
+  <a href="http://#">FAQ</a>
+        <a href="http://#">Contact Us</a>
+        <a href="http://#">Terms And Condition</a>
+        <a href="http://#">Privacy Policy</a>
+        <a href="http://#">&copy; 2021 | Portfolio </a>
+</footer>
+  
+</body>
+</html>
